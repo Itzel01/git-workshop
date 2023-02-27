@@ -15,7 +15,7 @@ Fellows will be able to:
 - get rid of merge conflicts locally
 - create pull requests 
 - merge braches into the main branch 
-- always have an updated and functional main branch 
+- always have an updated and functional `main` branch 
 
 ### Vocabulary 
 
@@ -52,30 +52,30 @@ Fellows will be able to:
 ### Git Workflow
 
 Merge conflicts occur when we have code that could possibly overwrite code that was already there. 
-They are bound to happen if multiple people are working on the same pages. 
-The main branch should always have working code so as a best practice, we shouldn't 
-- work off of our main branch. 
-- Merge into our main branch code that hasn't been tested. 
+They are bound to happen if multiple people are working on the same file. 
+The `main` branch should always have working code so as a best practice, we shouldn't 
+- work off of our `main` branch. 
+- Merge into our `main` branch code that hasn't been tested. 
 
 Here are some steps that we can take in order to avoid merge conflicts or bugs in the main branch.
 
-1. Create a new branch for new branch 
+1. Create a new branch for new feature or bug-fix
   - `git checkout -b <branchName>`
-2. Constantly stage and push up code for that branch, this will not conflict with the main branch 
+2. Constantly stage and push up code for that branch, this will not conflict with the `main` branch 
   - `git add .` 
   - `git commit -m "commit message"`
   - `git push`
-3. When done with the feature, checkout to main 
+3. When done with the feature, checkout to `main` 
   - `git checkout main`
-4. Pull down changes from main 
+4. Pull down changes from `main` 
   - `git pull`
 5. Checkout to branch you were working off of 
   - `git checkout <branchName>`
-6. Merge the **main** branch into your branch
+6. Merge the `**main**` branch into your branch
   - `git merge main`
 7. Fix merge conflicts, if any 
 8. Stage and push up changes to branch 
-9. On github's GUI, start a pull request 
+9. On GitHub's GUI, start a pull request 
 10. Communicate to team that a feature is done and in need of testing 
 11. Team member(s) should test new feature by locally checking out to the remote branch 
 12. Team member should approve Pull Request if it is working 
