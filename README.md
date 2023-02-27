@@ -60,17 +60,25 @@ The main branch should always have working code so as a best practice, we should
 Here are some steps that we can take in order to avoid merge conflicts or bugs in the main branch.
 
 1. Create a new branch for new branch 
+  - `git checkout -b <branchName>`
 2. Constantly stage and push up code for that branch, this will not conflict with the main branch 
+  - `git add .` 
+  - `git commit -m "commit message"`
+  - `git push`
 3. When done with the feature, checkout to main 
+  - `git checkout main`
 4. Pull down changes from main 
+  - `git pull`
 5. Checkout to branch you were working off of 
+  - `git checkout <branchName>`
 6. Merge the **main** branch into your branch
-7. Fix merge conflicts if any 
-8. Push up changes to branch 
+  - `git merge main`
+7. Fix merge conflicts, if any 
+8. Stage and push up changes to branch 
 9. On github's GUI, start a pull request 
 10. Communicate to team that a feature is done and in need of testing 
 11. Team member(s) should test new feature by locally checking out to the remote branch 
 12. Team member should approve Pull Request if it is working 
 
 ### Additional Resources: 
-Slide Deck Link
+[Slide Deck Link](https://docs.google.com/presentation/d/15rtczQSO8lZhdtRVyB4Nx4mWOB-7Q7q3o2krAvundBc/edit#slide=id.g21118077af0_0_3)
